@@ -8,7 +8,7 @@ If you want another version, do:
 
 ```
 $ git clone https://github.com/Chiefbark/Docker.git
-$ cd node
+$ cd expo-cli
 $ docker build -t <image-name> --build-arg node_version=<version> .
 ```
 
