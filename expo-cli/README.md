@@ -7,8 +7,7 @@ Default node version: `lts`
 If you want another version, do:
 
 ```
-$ git clone https://github.com/Chiefbark/Docker.git
-$ cd expo-cli
+$ wget https://raw.githubusercontent.com/Chiefbark/Docker/master/expo-cli/Dockerfile
 $ docker build -t <image-name> --build-arg node_version=<version> .
 ```
 
