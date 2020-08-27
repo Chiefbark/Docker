@@ -18,7 +18,7 @@ https://github.com/nodesource/distributions#debinstall
 
 Example:
 ```
-$ docker build -t test-node --build-arg node_version=current .
+$ docker build -t test-expo --build-arg node_version=current .
 ```
 
 ## Usage
