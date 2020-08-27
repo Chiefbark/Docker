@@ -16,13 +16,10 @@ You can see the available node versions here:
 
 https://github.com/nodesource/distributions#debinstall
 
-Examples:
-
-Node.js v14.x -> 14
-<br>
-Node.js LTS -> lts
-<br>
-Node.js Current -> current
+Example:
+```
+$ docker build -t test-node --build-arg node_version=current .
+```
 
 ## Usage
 
@@ -39,9 +36,3 @@ Once you created the container, you will be prompted to create a new expo projec
 Run `npm start` and open http://localhost:19002 to see the devtools of the project or http://&lt;container-ip&gt;:19002.
 
 Run `docker inspect <container> | grep IPAddress` while the container is running to check the container-ip.
-
-### Variables --build-arg
-
-| var | default | description |
-|:--|:--|:--|
-| NODE_VERSION | `'lts'` | node version. See https://github.com/nodesource/distributions#debinstall. |
