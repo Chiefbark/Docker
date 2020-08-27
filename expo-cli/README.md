@@ -2,6 +2,28 @@
 
 Ubuntu based image with git, node, npm and expo-cli installed.
 
+Default node version: `lts`
+
+If you want another version, do:
+
+```
+$ git clone https://github.com/Chiefbark/Docker.git
+$ cd node
+$ docker build -t <image-name> --build-arg node_version=<version> .
+```
+
+You can see the available node versions here:
+
+https://github.com/nodesource/distributions#debinstall
+
+Examples:
+
+Node.js v14.x -> 14
+<br>
+Node.js LTS -> lts
+<br>
+Node.js Current -> current
+
 ## Usage
 
 Start a container in interactive mode, and assign a volume (if needed).
