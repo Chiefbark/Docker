@@ -16,13 +16,10 @@ You can see the available node versions here:
 
 https://github.com/nodesource/distributions#debinstall
 
-Examples:
-
-Node.js v14.x -> 14
-<br>
-Node.js LTS -> lts
-<br>
-Node.js Current -> current
+Example:
+```
+$ docker build -t test-node --build-arg node_version=current .
+```
 
 ## Usage
 
